@@ -32,7 +32,6 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'tmux' \
   'prompt' \
   'syntax-highlighting' \
   'history-substring-search' \
@@ -41,6 +40,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'pacman' \
   'python' 
+  #'tmux' \
 
 #
 # Autosuggestions
