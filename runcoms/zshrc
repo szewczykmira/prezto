@@ -13,6 +13,11 @@ fi
 # Customize to your needs...
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Git
-source /usr/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
 
-alias pacman=yaourt
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+eval "$(direnv hook zsh)"
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
