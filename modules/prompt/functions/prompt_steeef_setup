@@ -46,7 +46,7 @@ function prompt_steeef_setup {
     _prompt_steeef_colors=(
       "%F{023}" # Green
       "%F{031}" # Blue
-      "%F{088}" # Red
+      "%F{167}" # IndianRed
       "%F{125}" # Hotpink
       "%F{229}" # Light yellow
     )
