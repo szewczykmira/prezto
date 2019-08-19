@@ -44,9 +44,7 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'command-not-found' \
   'git' \
-  'pacman' \
   'python' 
-  #'tmux' \
 
 #
 # Autosuggestions
