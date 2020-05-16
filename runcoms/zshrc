@@ -11,6 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export PATH="$HOME/.poetry/bin:$PATH"
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Git
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
