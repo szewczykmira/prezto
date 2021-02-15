@@ -23,7 +23,8 @@ eval "$(direnv hook zsh)"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
+# can be used in ipython %edit command
+export EDITOR=vim
 
 # Load info specific for given workstation
 source ~/.zshrc_custom
