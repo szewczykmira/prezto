@@ -10,4 +10,31 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+eval $(/opt/homebrew/bin/brew shellenv)
+
 # Customize to your needs...
+export PATH="$HOME/.poetry/bin:$PATH"
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+if test -f "/usr/local/bin/virtualenvwrapper.sh"; then
+    source /usr/local/bin/virtualenvwrapper.sh
+  else
+    source /opt/homebrew/bin/virtualenvwrapper.sh
+fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+eval "$(direnv hook zsh)"
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+# can be used in ipython %edit command
+export EDITOR=vim
+alias wip="git commit -a -n -m 'wip'"
+alias ga="git add"
+
+# Load info specific for given workstation
+source ~/.zshrc_custom
+
+eval "$(direnv hook zsh)"
