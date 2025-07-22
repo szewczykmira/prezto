@@ -16,12 +16,6 @@ eval $(/opt/homebrew/bin/brew shellenv)
 export PATH="$HOME/.poetry/bin:$PATH"
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Projects
-export VIRTUALENVWRAPPER_PYTHON=$(which python3)
-if test -f "/usr/local/bin/virtualenvwrapper.sh"; then
-    source /usr/local/bin/virtualenvwrapper.sh
-  else
-    source /opt/homebrew/bin/virtualenvwrapper.sh
-fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -36,5 +30,3 @@ alias ga="git add"
 
 # Load info specific for given workstation
 source ~/.zshrc_custom
-
-eval "$(direnv hook zsh)"
